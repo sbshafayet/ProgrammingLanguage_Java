@@ -1,0 +1,104 @@
+
+
+package arraymaximumminimun;
+
+import java.util.Scanner;
+
+public class ArrayMaximumMinimun {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double[] number = new double[5];
+        System.out.print("Please enter 5 numbers : ");
+
+        for (int i = 0; i < 5; i++) {
+            //for(int i = 0; <number.length; i++){
+            number[i] = input.nextDouble();
+        }
+        double max = number[0];
+        double min = number[0];
+        for (int i = 1; i < 5; i++) {
+
+            if (max < number[i]) {
+                max = number[i];
+            }
+            if (min > number[i]) {
+                min = number[i];
+            }
+        }
+        System.out.println("Maximum = " + max);
+        System.out.println("Minimum = " + min);
+    }
+}
+
+/* Simple Output:
+Output : 1 2 3 4 5
+Maximum = 5.0
+Minimum = 1.0
+ */
+
+
+
+
+
+
+
+/*
+
+package arraymaximumminimun;
+
+import java.util.Scanner;
+
+public class ArrayMaximumMinimun {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double[] number = new double[5];
+        double sum = 0;
+
+        System.out.print("Please enter 5 numbers : ");
+
+        for (int i = 0; i < 5; i++) {
+            //for(int i = 0; <number.length; i++){
+            number[i] = input.nextDouble();
+        }
+
+        for (int i = 0; i < 5; i++) {
+            //for(int i = 0; <number.length; i++){
+            sum = sum + number[i];
+        }
+        
+        //System.out.println("The average is : "+sum/5);
+        double avg = sum / 5;
+        //double avg = sum/number.length;
+        System.out.println("The sum is : " + sum);
+        System.out.println("The average is : " + avg);
+        
+        double max = number[0];
+        double min = number[0];
+        for(int i = 1; i<5; i++){
+            
+            if(max<number[i]){
+               max = number[i];
+            }
+            if(min>number[i]){
+               min = number[i];
+        }
+        }
+        System.out.println("Maximum = "+max);
+        System.out.println("Minimum = "+min);
+    }
+}
+
+*/
+
+
+/* Simple Output:
+Output : 1 2 3 4 5
+The Sum is : 15.0
+The average is : 3.0
+Maximum = 5.0
+Minimum = 1.0
+*/
