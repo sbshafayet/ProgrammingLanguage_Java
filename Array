@@ -46,6 +46,7 @@ public class Array {
 }
 
 */
+
 /* Output
 Array size is = 5
 */
@@ -76,6 +77,7 @@ public class Array {
 }
 
 */
+
 /* Output
 Sum = 50
 */
