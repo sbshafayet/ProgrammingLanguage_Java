@@ -49,7 +49,7 @@ public class ArraySumAverage {
 
         for(int i = 0; i<5; i++){
         //for(int i = 0; <number.length; i++){
-            number[0] = input.nextDouble();
+            number[i] = input.nextDouble();
         }
 
         //number[0] = 1
