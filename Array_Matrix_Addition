@@ -47,7 +47,7 @@ public class ArrayMatrixAddition {
 
 
 
-/* Simple Output:
+/* Sample Output:
 Enter row and column: 2 3
 Enter elements for Matrix A:
 1 2 3
