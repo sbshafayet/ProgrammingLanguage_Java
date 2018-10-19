@@ -1,7 +1,6 @@
 
 
 package arithmeticoperator;
-
 import java.util.Scanner;
 
 public class ArithmeticOperator {
@@ -27,7 +26,8 @@ public class ArithmeticOperator {
 
         result = num1 / num2;
         //double result2 = (double) num1/num2;
-        System.out.println("Division is = " + result2);
+        System.out.println("Division is = " + result);
+        //System.out.println("Division is = " + result2);
 
         result = num1 % num2;
         System.out.println("Remainder is = " + result);
@@ -64,7 +64,8 @@ public class ArithmeticOperator {
 
         result = num1 / num2;
         //double result2 = (double) num1/num2;
-        System.out.println("Division is = " + result2);
+        System.out.println("Division is = " + result);
+        //System.out.println("Division is = " + result2);
 
         result = num1 % num2;
         System.out.println("Remainder is = " + result);
