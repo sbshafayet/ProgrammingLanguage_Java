@@ -1,0 +1,86 @@
+
+
+package inheritance;
+
+class Abc {
+    private int a;
+    private int b;
+    private int c;
+
+    public Abc() 
+    {
+        
+    }
+
+    public Abc(int a, int b, int c) 
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    public int getA() 
+    {
+        return a;
+    }
+
+    public void setA(int a) 
+    {
+        this.a = a;
+    }
+
+    public int getB() 
+    {
+        return b;
+    }
+
+    public void setB(int b)
+    {
+        this.b = b;
+    }
+
+    public int getC()
+    {
+        return c;
+    }
+
+    public void setC(int c)
+    {
+        this.c = c;
+    }  
+    
+    public void show()
+    {
+        System.out.println("Hello");
+    }
+    
+    public void show(int i)
+    {
+        System.out.println("Show Method Overloaing");
+    }
+    
+    public void show(String i)
+    {
+        System.out.println("Show Method Overloaing 2");
+    }
+}
+    
+
+package inheritance;
+public class MyProg extends Abc
+{    
+    @Override
+    public void show()
+    {
+        System.out.println("World");
+    }
+    
+    public static void main(String[] args) 
+    {
+       //Abc xyz = new Abc();
+        MyProg xyz = new MyProg();
+       //xyz.show();
+        //xyz.show("5");
+        xyz.show();
+    }    
+}
