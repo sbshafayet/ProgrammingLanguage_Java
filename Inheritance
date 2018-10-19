@@ -1,0 +1,37 @@
+
+package inheritance;
+
+public class Person {
+    
+    String name;
+    int age;
+    
+    void display1(){
+        System.out.println("Name : "+name);
+        System.out.println("Age : "+age);
+    }
+}
+
+package inheritance;
+
+public class Teacher extends Person {
+    //name,age,display1()
+    String qualification;
+ 
+    void display2(){
+        display1();
+        System.out.println("Qualification : "+qualification);
+  }
+    
+     public static void main(String[] args) {
+        
+        Teacher obj = new Teacher();
+        obj.name = "Monirul Hasan Tomal";
+        obj.age = 40;
+        obj.qualification = "MSc in CSE";
+        obj.display2();
+    }
+}
+
+
+
