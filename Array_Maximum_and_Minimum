@@ -32,7 +32,7 @@ public class ArrayMaximumMinimun {
     }
 }
 
-/* Simple Output:
+/* Sample Output:
 Output : 1 2 3 4 5
 Maximum = 5.0
 Minimum = 1.0
@@ -95,7 +95,7 @@ public class ArrayMaximumMinimun {
 */
 
 
-/* Simple Output:
+/* Sample Output:
 Output : 1 2 3 4 5
 The Sum is : 15.0
 The average is : 3.0
