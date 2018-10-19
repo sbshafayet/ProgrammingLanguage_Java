@@ -23,7 +23,7 @@ public class ArraySumAverage {
     }
 }
 
-/* Simple Output:
+/* Sample Output:
 input : 1 2 3 4 5
 The sum is: 15
 */
@@ -72,7 +72,7 @@ public class ArraySumAverage {
 
 */
 
-/* Simple Output:
+/* Sample Output:
 input : 1 1 2 3 4
 The sum is: 11
 The average is : 2.2
