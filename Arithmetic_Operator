@@ -41,11 +41,8 @@ public class ArithmeticOperator {
 
 
 
-
-
-
-
 /*
+
 package arithmeticoperator;
 
 public class ArithmeticOperator {
@@ -55,7 +52,6 @@ public class ArithmeticOperator {
         int num1, num2, result;
         num = 10;
         num = 20;
-
 
         result = num1 + num2;
         System.out.println("Sum is = " + result);
