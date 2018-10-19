@@ -1,0 +1,31 @@
+package arraysearch;
+
+import java.util.Scanner;
+
+public class ArraySearch {
+
+    public static void main(String[] args) {
+        int size, count = 0, search;
+        int arr[];
+
+        Scanner s = new Scanner(System.in);
+        System.err.println("Enter array size");
+        size = s.nextInt();
+        arr = new int[size];
+        System.err.println("Enter " + size + " values:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = s.nextInt();
+        }
+        System.err.println("Enter a value to search:");
+        search = s.nextInt();
+        for (int i = 0; i < size; i++) {
+            if (search == arr[i]) {
+                System.out.println("Matched with index: " + i);
+                count++;
+            }
+        }
+        System.out.println("The value " + search + " exixts " + count + " times");
+
+    }
+
+}
