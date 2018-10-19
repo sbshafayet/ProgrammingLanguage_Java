@@ -1,0 +1,81 @@
+
+package array;
+
+public class Array {
+
+    public static void main(String[] args) {
+        
+        int[] number = new int[5];
+        
+        number[0] = 10;
+        number[1] = 10;
+        number[2] = 10;
+        number[3] = 10;
+        number[4] = 10;
+        
+        System.out.println(number[0]);
+    }
+}
+
+/* Output
+10
+*/
+
+
+
+
+/*
+
+package array;
+
+public class Array {
+
+    public static void main(String[] args) {
+        
+        int[] number = new int[5];
+        
+        number[0] = 10;
+        number[1] = 10;
+        number[2] = 10;
+        number[3] = 10;
+        number[4] = 10;
+        
+        int len = number.length;
+        System.out.println(Array size is = " +len);
+    }
+}
+
+*/
+/* Output
+Array size is = 5
+*/
+
+
+
+
+
+/*
+
+package array;
+
+public class Array {
+
+    public static void main(String[] args) {
+        
+        int[] number = new int[5];
+        
+        number[0] = 10;
+        number[1] = 10;
+        number[2] = 10;
+        number[3] = 10;
+        number[4] = 10;
+        
+        int sum = number[0]+number[1]+number[3]+number[4];
+        System.out.println("Sum = "+sum);
+    }
+}
+
+*/
+/* Output
+Sum = 50
+*/
