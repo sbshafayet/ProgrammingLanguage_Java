@@ -1,0 +1,88 @@
+
+
+package arithmeticoperator;
+
+import java.util.Scanner;
+
+public class ArithmeticOperator {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num1, num2, result;
+
+        System.out.print("Enter First Number: ");
+        num1 = sc.nextInt();
+
+        System.out.print("Enter Second Number: ");
+        num2 = sc.nextInt();
+
+        result = num1 + num2;
+        System.out.println("Sum is = " + result);
+
+        result = num1 - num2;
+        System.out.println("Subtraction is = " + result);
+
+        result = num1 * num2;
+        System.out.println("Multiplication is = " + result);
+
+        result = num1 / num2;
+        //double result2 = (double) num1/num2;
+        System.out.println("Division is = " + result2);
+
+        result = num1 % num2;
+        System.out.println("Remainder is = " + result);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+package arithmeticoperator;
+
+public class ArithmeticOperator {
+
+    public static void main(String[] args) {
+        
+        int num1, num2, result;
+        num = 10;
+        num = 20;
+
+
+        result = num1 + num2;
+        System.out.println("Sum is = " + result);
+
+        result = num1 - num2;
+        System.out.println("Subtraction is = " + result);
+
+        result = num1 * num2;
+        System.out.println("Multiplication is = " + result);
+
+        result = num1 / num2;
+        //double result2 = (double) num1/num2;
+        System.out.println("Division is = " + result2);
+
+        result = num1 % num2;
+        System.out.println("Remainder is = " + result);
+
+    }
+
+}
+
+*/
+
+/* Sample Output:
+Sum is = 30
+Subtraction is = 10
+Multiplication is = 300
+Division is = 2
+Remainder is = 0
+*/
