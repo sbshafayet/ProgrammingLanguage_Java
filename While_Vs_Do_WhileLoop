@@ -1,0 +1,28 @@
+
+package while_vs_dowhileloop;
+
+public class While_Vs_DoWhileLoop {
+
+    public static void main(String[] args) {
+        
+        int i = 6;
+        
+        do{
+            System.out.println("Bangladesh");
+            i++;
+        }
+        while(i<=5);
+    }
+}
+
+/* Output
+Bangladesh
+*/
+
+
+
+/*
+N.B : 
+What is the main difference between while and do while loop?
+=> The do while execute at least one time even if the condition false.
+*/
