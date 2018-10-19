@@ -1,0 +1,45 @@
+
+package polymorphism;
+
+public class  A 
+{
+     public void show()
+     {
+        System.out.println("In A show()");
+     }
+     public void show(int x)
+     {
+        System.out.println("In A show(int x)");
+     }
+     public void show(String x)
+     {
+        System.out.println("In A show(String x)");
+     }
+}
+
+package polymorphism;
+public class Polymorphism extends A
+{
+
+   @Override
+   public void show(int x)
+   {
+        System.out.println("In A show(int x)");
+   }
+    
+    public static void main(String[] args) {
+        
+        Polymorphism xyz = new Polymorphism();
+        xyz.show();
+        xyz.show(10);
+    }
+}
+
+
+
+
+
+
+
+
+
