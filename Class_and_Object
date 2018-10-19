@@ -1,0 +1,29 @@
+
+package classobject;
+
+public class Teacher {
+    
+    String name,gender,subject;
+    int age;
+    
+}
+
+package classobject;
+public class Test {
+   
+    public static void main(String[] args) {
+        
+    Teacher obj = new Teacher();
+    obj.name = "Ashik Rahman";
+    obj.age = 40;
+    obj.gender = "Male";
+    obj.subject = "CSE";
+    
+    System.out.println("Name : "+obj.name);
+    System.out.println("Age : "+obj.age);
+    System.out.println("Gender : "+obj.gender);
+    System.out.println("Subject : "+obj.subject);
+    
+    }
+     
+   }
