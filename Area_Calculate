@@ -1,0 +1,45 @@
+
+package areaofcircletrianglerectangle;
+import java.util.Scanner;
+
+public class AreaOfCircleTriangleRectangle {
+
+    
+  public static double Circle(double radius){
+        return 3.1416*radius*radius;
+    }
+    public static double Rectangle(double length,double width){
+        return length*width;
+    }
+    public static double Triangle(double base,double height){
+        return 0.5*base*height;
+    }
+
+    
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the radius of Circle: ");
+        double radius = sc.nextDouble();
+        
+        System.out.print("Enter the length of Rectangle: ");
+        double length = sc.nextDouble();
+        System.out.print("Enter the width of Rectangle: ");
+        double width = sc.nextDouble();
+        
+        System.out.print("Enter the base of Triangle: ");
+        double base = sc.nextDouble();
+        System.out.print("Enter the height of Triangle: ");
+        double height = sc.nextDouble();
+        
+        double circle = Circle(radius);
+        System.out.println("The area of circle is: "+circle);
+        
+        double rectangle = Rectangle(length,width);
+        System.out.println("The area of rectangle is: "+rectangle);
+        
+        double triangle = Triangle(base,height);
+        System.out.println("The area of triangle is: "+triangle);
+        
+    }
+}
