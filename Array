@@ -79,3 +79,32 @@ public class Array {
 /* Output
 Sum = 50
 */
+
+
+
+
+/*
+N.B:
+>An array is a collection of variables of the same type.
+>Array index number start with 0
+>An index must be non negative.
+
+>Declaring variables:
+ ....................
+ datatype variableName;
+
+Emaple:
+........
+int number;
+String names;
+
+>Declaring Array:
+ ....................
+ datatype[] arrayName;
+
+Example:
+.......
+int[] number;
+String[] names;
+*/
+
