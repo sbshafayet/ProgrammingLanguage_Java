@@ -12,13 +12,11 @@ public class ForLoop {
 }
 
 /* Output
-
 Bangladesh
 Bangladesh
 Bangladesh
 Bangladesh
 Bangladesh
-
 */
 
 
@@ -42,13 +40,11 @@ public class ForLoop {
 */
 
 /* Output
-
 1 Bangladesh
 2 Bangladesh
 3 Bangladesh
 4 Bangladesh
 5 Bangladesh
-
 */
 
 
@@ -72,13 +68,11 @@ public class ForLoop {
 */
 
 /* Output
-
 1
 2
 3
 4
 5
-
 */
 
 
@@ -102,13 +96,11 @@ public class ForLoop {
 */
 
 /* Output
-
 2
 4
 6
 8
 10 
-
 */
 
 
@@ -132,13 +124,11 @@ public class ForLoop {
 */
 
 /* Output
-
 5
 4
 3
 2
 1
-
 */
 
 
