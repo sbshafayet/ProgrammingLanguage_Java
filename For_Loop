@@ -1,0 +1,149 @@
+
+package forloop;
+
+public class ForLoop {
+
+    public static void main(String[] args) {
+        int i;
+        for(i=1 ; i<=5; i++){
+            System.out.println("Bangladesh");
+        }
+    }
+}
+
+/* Output
+
+Bangladesh
+Bangladesh
+Bangladesh
+Bangladesh
+Bangladesh
+
+*/
+
+
+
+
+
+/*
+
+package forloop;
+
+public class ForLoop {
+
+    public static void main(String[] args) {
+        int i;
+        for(i=1 ; i<=5; i++){
+            System.out.println(i+" Bangladesh");
+        }
+    }
+}
+
+*/
+
+/* Output
+
+1 Bangladesh
+2 Bangladesh
+3 Bangladesh
+4 Bangladesh
+5 Bangladesh
+
+*/
+
+
+
+
+
+/*
+
+package forloop;
+
+public class ForLoop {
+
+    public static void main(String[] args) {
+        int i;
+        for(i=1 ; i<=5; i++){
+            System.out.println(i);
+        }
+    }
+}
+
+*/
+
+/* Output
+
+1
+2
+3
+4
+5
+
+*/
+
+
+
+
+
+/*
+
+package forloop;
+
+public class ForLoop {
+
+    public static void main(String[] args) {
+        int i;
+        for(i=1 ; i<=10; i+2){
+            System.out.println("Bangladesh");
+        }
+    }
+}
+
+*/
+
+/* Output
+
+2
+4
+6
+8
+10 
+
+*/
+
+
+
+
+
+/*
+
+package forloop;
+
+public class ForLoop {
+
+    public static void main(String[] args) {
+        int i;
+        for(i=5 ; i=>1; i--){
+            System.out.println("Bangladesh");
+        }
+    }
+}
+
+*/
+
+/* Output
+
+5
+4
+3
+2
+1
+
+*/
+
+
+
+
+
+
+
