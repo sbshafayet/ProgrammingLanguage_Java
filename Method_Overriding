@@ -1,0 +1,76 @@
+
+
+package methodoverriding;
+
+public class Person {
+
+    String name;
+    int age;
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+package methodoverriding;
+
+public class Teacher extends Person {
+
+    //name,age,display()
+    String qualification;
+
+    @Override
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Qualification: " + qualification);
+    }
+
+    public static void main(String[] args) {
+
+        Teacher obj = new Teacher();
+        obj.name = "Monirul Hasan Tomal";
+        obj.age = 40;
+        obj.qualification = "Msc in CSE";
+        obj.display();
+
+        //Person obj2 = new Person();
+        //obj2.name = "Ashik Rahman";
+        //obj2.age = 45;
+        //obj2.display();
+    }
+
+}
+
+
+
+
+
+
+
+/*
+
+N.B:
+> Method Overriding:
+Declaring a method is subclass which is already present subclass is known as Method Overriding.
+
+> Method Overriding Rules:
+Name, Signature type, Parameter must be same.
+
+> Can not use static method because using static method can not override.
+> Final keyword can not be used. Using Final keyword, it can not be changed later.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
