@@ -1,0 +1,71 @@
+
+
+package methodoverloading;
+
+public class Overload {
+
+    void add() {
+        System.out.println("Nothing to add");
+    }
+
+    void add(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    void add(double a, double b) {
+        System.out.println(a + b);
+    }
+
+    void add(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
+
+}
+
+package methodoverloading;
+public class OverloadTest {
+
+    public static void main(String[] args) {
+
+        Overload obj = new Overload();
+        obj.add();
+        obj.add(5, 10);
+        obj.add(5.5, 6.5);
+        obj.add(5, 10, 20);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+N.B:
+> Method Overloading: 
+Deaclaring a method is subclass which is already presemt superclass is known as Method Overloading.
+
+Points to remember about Method Overloading:
+> Same Method names
+> Parameter lists are different
+> Inside the same Class
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
