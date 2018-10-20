@@ -1,0 +1,120 @@
+
+
+package abstraction;
+
+public abstract class MobileUser {
+        
+    abstract void sendMessage(); //abstract method
+
+}
+
+package abstraction;
+public class People extends MobileUser {
+
+    //sendMessange
+    @Override
+    void sendMessage() {
+        System.out.println("Hi, I am user");
+        System.out.println("hey, I am Sarah");
+    }
+
+    public static void main(String[] args) {
+
+        MobileUser mu; //reference variable;
+
+        mu = new People();
+        mu.sendMessage();
+
+    }
+
+}
+
+
+
+
+
+
+
+/*
+> Abstraction:
+Abstraction is the process of hidhing the implementation details
+and showing only the functionality to the user.
+
+> Abstract Method:
+abstract void message();
+
+Points to remember about abstract method:
+> Abstract method has no body.
+> It must be ends with a semicolon.
+> It must be in the abstract class.
+> It must be overridden.
+> It can never be final and static.
+
+Abstract Class:
+> Abstract class: abstract class A { }
+> Abstract class have abstract and non abstract method.
+> Abstract class can not be instantiated.
+> If you extends an abstract class you have to use all its abstract methods or 
+  you have to declare the class as Abstract itself. 
+*/
+
+
+
+
+
+
+
+
+
+
+//for non Abstract
+/*
+package abstraction_non_method;
+
+public abstract class MobileUser {
+
+    void call() {  //non abstract method
+
+        System.out.println("Hi, I am user");
+        System.out.println("hey, I am Sarah");
+
+    }
+}
+
+package abstraction_non_method;
+public class People extends MobileUser {
+
+    //call
+    public static void main(String[] args) {
+
+        MobileUser mu; //reference variable;
+
+        mu = new People();
+        mu.call();
+
+    }
+}
+
+*/
+
+
+
+
+
+
+/*
+N.B:
+> Non Abstract Method:
+void message(){
+...........
+...........
+}
+
+> Non abstract class can't have abstract class.
+*/
+
+
+
+
+/*
+N.B:
