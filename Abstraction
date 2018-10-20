@@ -36,6 +36,7 @@ public class People extends MobileUser {
 
 
 /*
+N.B:
 > Abstraction:
 Abstraction is the process of hidhing the implementation details
 and showing only the functionality to the user.
@@ -116,5 +117,23 @@ void message(){
 
 
 
-/*
-N.B:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
