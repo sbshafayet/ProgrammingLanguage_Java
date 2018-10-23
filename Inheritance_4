@@ -24,7 +24,7 @@ public class Teacher {
    }
 }
 
-package inheritancedemo_2;
+package inheritancedemo;
 public class InheritTest extends Teacher {
     
   String mainSubject = "Physics";
