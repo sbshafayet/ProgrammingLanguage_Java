@@ -38,7 +38,7 @@ public class EncapsulationDemo {
 package encapsulationdemo;
 public class EncapsTest {
     
-    public static void main(String args[]){
+    public static void main(String[] args){
          EncapsulationDemo obj = new EncapsulationDemo();
          obj.setName("Mario");
          obj.setAge(32);
