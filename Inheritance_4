@@ -28,7 +28,7 @@ package inheritancedemo;
 public class InheritTest extends Teacher {
     
   String mainSubject = "Physics";
-  public static void main(String args[]){
+  public static void main(String[] args){
 	   InheritTest obj = new InheritTest();
 	   /* Note: we are not accessing the data members 
 	    * directly we are using public getter method 
