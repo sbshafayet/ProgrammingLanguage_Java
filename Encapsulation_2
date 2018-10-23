@@ -1,0 +1,67 @@
+
+
+
+package encapsulationdemo;
+
+public class EncapsulationDemo {
+    
+    private int ssn;
+    private String Name;
+    private int Age;
+
+    //Getter and Setter methods
+    public int getSSN(){
+        return ssn;
+    }
+
+    public String getName(){
+        return Name;
+    }
+
+    public int getAge(){
+        return Age;
+    }
+
+    public void setAge(int n){
+        Age = n;
+    }
+
+    public void setName(String n){
+        Name = n;
+    }
+
+    public void setSSN(int n){
+        ssn = n;
+    }
+}
+
+package encapsulationdemo;
+public class EncapsTest {
+    
+    public static void main(String args[]){
+         EncapsulationDemo obj = new EncapsulationDemo();
+         obj.setName("Mario");
+         obj.setAge(32);
+         obj.setSSN(112233);
+         System.out.println("Employee Name: " + obj.getName());
+         System.out.println("Employee SSN: " + obj.getSSN());
+         System.out.println("Employee Age: " + obj.getAge());
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
