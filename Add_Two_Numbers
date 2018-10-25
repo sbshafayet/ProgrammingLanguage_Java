@@ -1,0 +1,251 @@
+
+
+
+// Add two numbers
+
+import java.util.Scanner;
+
+public class AddTwoNumbers
+{
+   public static void main(String[] args)
+   {
+      int a, b, c;
+      System.out.println("Please enter two integers to add : ");
+      Scanner sc = new Scanner(System.in);
+
+      a = sc.nextInt();
+      b = sc.nextInt();
+      c = a + b;
+
+      System.out.println("Sum of Two Integers = " + c);
+      sc.close();
+   }
+}
+
+
+
+
+
+
+
+// Addition, Subtraction, Multiplication, Division, Remainder, Absolute
+
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class BigIntegerDemo
+{
+   public static void main(String[] args)
+   {
+      BigInteger a, b;
+      System.out.print("Please enter two numbers : ");
+      Scanner sc = new Scanner(System.in);
+      a = sc.nextBigInteger();
+      b = sc.nextBigInteger();
+
+      BigInteger add, sub, mul, div, mod, rem, abs;
+
+      add = a.add(b);
+      System.out.println("Addition - " + add);
+
+      sub = a.subtract(b);
+      System.out.println("Subtraction - " + sub);
+
+      mul = a.multiply(b);
+      System.out.println("Multiplication - " + mul);
+
+      div = a.divide(b);
+      System.out.println("Multiplication - " + div);
+
+      mod = a.mod(b);
+      System.out.println("Modulus - " + mod);
+
+      rem = a.remainder(b);
+      System.out.println("Remainder - " + rem);
+
+      abs = a.abs();
+      System.out.println("Absolute - " + abs);
+
+      sc.close();
+   }
+}
+
+
+/*
+Output:
+
+Please enter two big integers numbers: 
+
+13156949
+23116
+
+Addition - 13180065
+Subtraction - 13133833
+Multiplication - 304136033084
+Multiplication - 569
+Modulus - 3945
+Remainder - 3945
+Absolute - 13156949
+
+*/
+
+
+
+
+
+
+
+
+
+// Using method
+
+
+import java.util.Scanner;
+
+public class AddTwoNumbers
+{
+   public static void main(String[] args)
+   {
+      int number1, number2, sum;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter first number : ");
+      number1 = sc.nextInt();
+      System.out.print("Please enter second number : ");
+      number2 = sc.nextInt();
+      // adding two integers in java
+      sum = addTwoNumbers(number1, number2);
+      System.out.println("Adding two integer : " + sum);
+      sc.close();
+   }
+ 
+   static int addTwoNumbers(int a, int b)
+   {
+      return a + b;
+   }
+}
+
+/*
+Output:
+
+Please enter first number : 10
+Please enter second number : 4
+Adding two integers : 14
+*/
+
+
+
+
+
+// Using class and objects
+
+import java.util.Scanner;
+
+public class AddTwoNumbersDemo
+{
+   public static void main(String[] args)
+   {
+      int number1, number2;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter first number : ");
+      number1 = sc.nextInt();
+      System.out.print("Please enter second number : ");
+      number2 = sc.nextInt();
+      Add a = new Add(number1, number2);
+      System.out.println("Adding numbers : " + a.sum);
+      sc.close();
+   }
+}
+
+public class Add
+{
+   int sum = 0;
+   Add(int a, int b)
+   {
+      sum = a + b;
+   }
+}
+
+
+/*
+Output:
+
+Please enter first number : 5
+Please enter second number : 5
+Adding numbers : 10
+
+/*
+
+
+
+
+
+
+
+// While Loop
+
+
+import java.util.Scanner;
+
+public class AddTwoNumbers
+{
+   public static void main(String[] args)
+   {
+      int number1, number2;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter first number : ");
+      number1 = sc.nextInt();
+      System.out.print("Please enter second number : ");
+      number2 = sc.nextInt();
+      while(number1-- != 0)
+      {
+         number2++;
+      }
+      System.out.println("Addition of two numbers : " + number2);
+      sc.close();
+   }
+}
+
+
+/*
+Output:
+
+Please enter first number : 50
+Please enter second number : 50
+Addition of two numbers : 100
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
