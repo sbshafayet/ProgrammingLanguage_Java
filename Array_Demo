@@ -1,0 +1,616 @@
+
+
+                 Types of array:
+
+To create an array in java there are two types:
+
+    > Single Dimensional Array
+    > Multidimensional Array
+    
+    
+    
+    
+    
+   > Below we can see declaration of array with all data types:
+
+int[] arrayNumbers;
+
+byte[] arrayBytes;
+
+short[] arrayShort;
+
+long[] arrayLong;
+
+float[] arrayFloat;
+
+double[] arrayDouble;
+
+boolean[] arrayBoolean;
+
+char[] arrayChar;
+
+String[] arrayString;
+
+
+    
+    
+    
+    
+    
+    
+    
+                       < Single dimensional array >
+
+Syntax :
+
+// java declare single dimensional array
+
+dataType[] arrNum;  
+dataType arrNum[];
+
+// instantiating an array
+
+arrNum = new datatype[size];
+
+
+
+
+
+public class SingleDimensionalDemo {
+   public static void main(String[] args) 
+   {
+      // declare and instantiating an array in java
+      int arrNum[] = new int[5]; 
+      // initializing array java
+      arrNum[0] = 25; 
+      arrNum[1] = 23; 
+      arrNum[2] = 15; 
+      arrNum[3] = 20; 
+      arrNum[4] = 24; 
+
+      System.out.println("Single dimensional array java example : ");
+      for(int a = 0; a < arrNum.length; a++) 
+         System.out.println(arrNum[a]);
+   }
+}
+
+/*
+Output :
+
+Single dimensional array java example :
+25
+23
+15
+20
+24
+
+*/
+
+
+
+
+
+
+             < Declare, instantiate and initialize an array  >
+
+
+public class SingleDimensionalExample {
+   public static void main(String[] args) 
+   {
+      // declaring, instantiation and initializing
+      int arrayNumbers[] = {25,23,15,20,24};
+      System.out.println("Single dimensional array java example : ");
+      // printing array in java 
+      for(int a = 0; a < arrayNumbers.length; a++) 
+         System.out.println(arrayNumbers[a]);
+   }
+}
+
+
+/*
+Output :
+
+Single dimensional array java example :
+25
+23
+15
+20
+24
+
+*/
+
+
+
+
+
+
+                  < How to initialize an array in java >
+                  
+                  
+public class ArrayJavaDemo {
+   public static void main(String[] args)
+   {
+      // declaring an array
+      int[] arrayNumber;
+      
+      // allocating memory for arrayNumber
+      arrayNumber = new int[6];
+
+      // initializing elements
+      arrayNumber[0] = 100;
+      arrayNumber[1] = 200;
+      arrayNumber[2] = 300;
+      arrayNumber[3] = 400;
+      arrayNumber[4] = 500;
+      arrayNumber[5] = 600;
+
+      System.out.println("-----Java Array Example------");     
+      System.out.println("Element at index zero - " + arrayNumber[0]);
+      System.out.println("Element at index one - " + arrayNumber[1]);
+      System.out.println("Element at index two - " + arrayNumber[2]);
+      System.out.println("Element at index three - " + arrayNumber[3]);
+      System.out.println("Element at index four - " + arrayNumber[4]);
+      System.out.println("Element at index five - " + arrayNumber[5]);
+   }
+}
+
+
+
+
+
+
+
+                                < Length of an array >
+
+
+public class ArrayLength
+{
+   public static void main(String[] args)
+   {
+      // declare array in java
+      short[] arrayNumber;
+
+      // allocating memory for arrayNumber
+      arrayNumber = new short[6];
+
+      System.out.println("-------------Length of an array demo----------");
+      System.out.println("The length of an array before initializing - " + arrayNumber.length);
+
+      // initializing elements
+      arrayNumber[0] = 100;
+      arrayNumber[1] = 200;
+      arrayNumber[2] = 300;
+      arrayNumber[3] = 400;
+      arrayNumber[4] = 500;
+      arrayNumber[5] = 600;
+
+      System.out.println("The length of an array after initializing - " + arrayNumber.length);
+   }
+}
+
+
+
+
+
+
+
+                          < Array index out of bounds exception >
+                          
+                          
+public class ArrayException 
+{
+   public static void main(String[] args) 
+   {
+      // declaring an integer array
+      int arr[] = new int[5];
+      System.out.println("The length of an array - " + arr.length);
+      // initializing elements
+      arr[0] = 11;
+      arr[1] = 12;
+      arr[2] = 13;
+      arr[3] = 14;
+      arr[4] = 15;
+      arr[5] = 16;
+      arr[6] = 17;
+   }
+}
+
+
+/*
+Output :
+
+The length of an array - 5
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at ArrayException.main(ArrayException.java:14)
+
+*/
+
+
+
+
+
+                              < Arraycopy() method >
+                              
+                             
+public static void arraycopy
+(  
+   Object src, int srcPos, Object dest, int destPos, int length;
+)
+
+Now let’s see an example on java arraycopy,
+
+public class ArrayCopyDemo 
+{
+   public static void main(String[] args) 
+   {
+      // here we declare source array 
+      char fromCh[] = { 'f', 'l', 'o', 'w', 'e', 'r', 'b', 'r', 'a', 'c', 'k', 'e', 't', 's' }; 
+      // here we declare destination array 
+      char toCh[] = new char[7]; 
+      // copying array using System.arraycopy() method 
+      System.arraycopy(fromCh, 1, toCh, 0, 7); 
+      // printing destination array 
+      System.out.println(String.valueOf(toCh)); 
+   }
+}
+
+/*
+Output :
+
+lowerbr
+
+*/
+
+
+
+
+
+
+                                  < Two dimensional array (2D) >
+
+
+
+
+// Multidimensional array
+
+
+> Syntax :
+
+// declaring multidimensional array in java
+
+dataType[][] studentMarks;
+
+dataType[][]studentMarks;
+
+dataType studentMarks[][];
+
+// array of 3 rows and 3 columns
+
+int studentMarks[][] = new int[3][3];
+
+In the above declaration you can see three and three in square brackets. This means three rows and four columns.
+
+We can initialize each element in multidimensional array like this,
+
+// initializing multidimensional array in java
+
+arr[0][0] = 22;
+
+arr[0][1] = 21;
+
+arr[0][2] = 18;
+
+arr[1][0] = 15;
+
+arr[1][1] = 25;
+
+arr[1][2] = 23;
+
+arr[2][0] = 20;
+
+arr[2][1] = 19;
+
+arr[2][2] = 16;
+
+
+
+
+
+
+public class MultidimensionalArrayDemo 
+{
+   public static void main(String[] args) 
+   {
+      // declaring and initializing 2D array
+      int arrNumber[][] = {{10,23,32},{22,42,52},{43,41,53}};
+      // printing two dimensional array
+      for(int a = 0; a < 3; a++)
+      {
+         for(int b = 0; b < 3; b++)
+         {
+            System.out.print(arrNumber[a][b] + " ");
+         }  
+         System.out.println();
+      }
+   }
+}
+
+/*
+Output :
+
+10 23 32
+22 42 52
+43 41 53
+
+*/
+
+
+
+
+// Multidimensional array – using loop
+
+
+public class MultidimensionalArrayLoop
+{
+   public static void main(String[] args)
+   {
+      int[][] arrEven = {{2,4,6},{8,10,12}};
+
+      int row = arrEven.length;
+
+      System.out.println("The number of rows is - " + row + "\n"); 
+
+      for(int a = 0; a < row; a++)
+      {
+         int column = arrEven[a].length;
+         System.out.println("The number of columns in a row - " + a + " is " + column);
+
+         for(int b = 0; b < column; b++)
+         {
+            System.out.println("The element at " + "arrEven[" + a + "] " + "[" + b + "] - " + arrEven[a][b]);
+         }
+         System.out.println();
+      }
+   }
+}
+
+
+
+
+
+
+// Multidimensional string array
+
+
+public class MultidimensionalStringArray
+{
+   public static void main(String[] args)
+   {
+      String [][] strNames = {{ "Apple", "Fruit" }, { "Green", "Color" }, { "Audi", "Car" }};
+
+      System.out.println("The element at strNames[0][0] - " + strNames[0][0]);
+      System.out.println("The element at strNames[0][1] - " + strNames[0][1]);
+
+      System.out.println("\n");
+
+      System.out.println("The element at strNames[1][0] - " + strNames[1][0]);
+      System.out.println("The element at strNames[1][1] - " + strNames[1][1]);
+
+      System.out.println("\n");
+
+      System.out.println("The element at strNames[2][0] - " + strNames[2][0]);
+      System.out.println("The element at strNames[2][1] - " + strNames[2][1]);
+   }
+}
+
+
+
+
+
+
+// Multidimensional string array – using for loop
+
+
+public class MultidimensionalStringLoop
+{
+   public static void main(String[] args)
+   {
+      String [][] strNames = {{ "Apple", "Fruit" }, { "Green", "Color" }, { "Audi", "Car" }};
+      int row = strNames.length;
+
+      System.out.println("The number of rows is - " + row + "\n"); 
+
+      for(int a = 0; a < row; a++)
+      {
+         int col = strNames[a].length;
+         System.out.println("The number of columns in row " + a + " is - " + col);
+
+         for(int b = 0; b < col; b++)
+         {
+            System.out.println("The element at " + "strNames[" + a + "]" + "[" + b + "] - " + strNames[a][b]);
+         }
+         System.out.println();
+      }
+   }
+}
+
+
+
+
+
+
+// How to pass java array to method
+
+
+public class JavaArrayToMethod 
+{
+   public static void main(String[] args) 
+   {
+      int arrayNumbers[] = {25,23,15,20,24}; // declaring and initializing an array  
+      passMethod(arrayNumbers); // passing array
+   }
+	
+   static void passMethod(int arrdemo[])
+   {  
+      int num = arrdemo[0];
+      for(int a = 1; a < arrdemo.length; a++)
+         if(num > arrdemo[a])
+            num = arrdemo[a];			  
+      System.out.println(num); 
+   }
+}
+
+
+/*
+Output:
+15
+*/
+
+
+
+
+
+// Anonymous array in java
+
+
+
+How to declare an anonymous array and example,
+
+new int[] { 2, 4, 6, 8, 10};  // anonymous integer array 
+
+new char[] {'a', 'b', 'c', 'd', 'e'); // anonymous character array
+
+new String[] {"Flower", "brackets", "code"}; // anonymous String array
+
+new int[][] {{20, 23}, {18, 21, 24}}; // anonymous multidimensional array
+
+
+
+
+
+
+
+
+public class AnonymousArray 
+{
+   public static void main(String[] args) 
+   {
+      // here we pass anonymous array to method
+      System.out.println("Anonymous array in java : ");
+      anonymousMethod(new int[]{25,23,15,20,24}); 
+   }
+
+   // creating method which accepts array as parameter 
+   static void anonymousMethod(int arrNum[])
+   { 
+      for(int a = 0; a < arrNum.length; a++) 
+         System.out.println(arrNum[a]); 
+   }
+}
+
+
+/*
+Output :
+
+Anonymous array in java :
+25
+23
+15
+20
+24
+
+*/
+
+
+
+
+
+
+
+
+
+// Addition of two matrices
+
+
+public class AddTwoMatrices
+{
+   public static void main(String[] args)
+   {
+      // here we are creating two matrices
+      int x[][] = {{2, 4, 6},{1, 3, 5}};
+      int y[][] = {{2, 4, 6},{1, 3, 5}};
+
+      // creating another matrix to store values
+      int z[][] = new int[2][3];
+
+      // now adding and printing values using for loop    
+      System.out.println("Addition of two matrices - ");
+      for(int a = 0; a < 2; a++)
+      {
+         for(int b = 0; b < 3; b++)
+         {
+            z[a][b] = x[a][b] + y[a][b];
+            System.out.print(z[a][b] + " ");
+         }
+         System.out.println();
+      }
+   }
+}
+
+
+/*
+Output:
+
+Addition of two matrices –
+4 8 12
+2 6 10
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+Advantages and disadvantages of array:
+
+Advantages	                                        Disadvantages
+> Array makes the code optimized.                   > We can store only fixed size of elements. Array does not grow its size at runtime.
+ Sorting and retrieving the data is easy. 	          
+> To get data located at any index                  > Array structure is static. Memory allocated to an array
+ position is easier.                                   can't be decreased or increased	
+> Array represents multiple data items of           > We must know in advance that how many elements are to be stored.
+ same type using only single name.                 
+> Array can be used to implement data structures    > Array elements are stored in consecutive memory locations.
+ like linked lists, queues, trees, graphs,             So insertion and deletion are difficult and time consuming.
+stacks etc.	                                        
+                                                      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
