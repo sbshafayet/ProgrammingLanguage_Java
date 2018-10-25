@@ -1,0 +1,77 @@
+
+
+
+
+package Interface_2;
+
+public interface Vehicle {
+
+    public void accelerate();
+    public void brake();
+    public void steer();
+}
+
+package Interface_2;
+public class BMW implements Vehicle {
+
+    @Override
+    public void accelerate() {
+        System.out.println("BMW car is accelerating!!");
+    }
+
+    @Override
+    public void brake() {
+        // TODO Auto-generated method stub
+    }
+
+    @Override
+    public void steer() {
+        // TODO Auto-generated method stub
+    }
+    }
+    
+public class InterfaceTest {
+public static void main(String[] args) {
+        Vehicle ve = new BMW();
+        ve.accelerate();
+    }
+}
+
+
+
+
+
+
+/* Output:
+
+BMW car is accelerating!!
+
+*/
+
+
+
+
+
+
+
+
+
+
+/* 
+N.B:
+> Interfecae: An interface is an collection of abrstract methods.
+
+Why we need an interface?
+> For fully abstraction.
+> Its supports multiple interface.
+
+Declaring an interface:
+> interface keyword is used to interface
+
+Interfaces have the following properties:
+> Each method in an interface is also implicity abstract.
+so the abstract keyword is not needed.
+> Methods in an interface are implicity public.
+> A class can inherit from just one super class but can implement multiple interfaces.  
+
+*/
