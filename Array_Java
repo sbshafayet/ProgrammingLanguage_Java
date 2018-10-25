@@ -1,6 +1,13 @@
 
 
-                 Types of array:
+
+What is an array?
+
+Array is a container object and it contain elements of similar data type.
+Array is a data structure where we store similar elements.
+
+
+> Types of array:
 
 To create an array in java there are two types:
 
@@ -11,7 +18,7 @@ To create an array in java there are two types:
     
     
     
-   > Below we can see declaration of array with all data types:
+> Below we can see declaration of array with all data types:
 
 int[] arrayNumbers;
 
@@ -39,7 +46,7 @@ String[] arrayString;
     
     
     
-                       < Single dimensional array >
+                       < Single dimensional array (1D) >
 
 Syntax :
 
