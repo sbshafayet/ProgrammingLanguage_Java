@@ -1,0 +1,59 @@
+
+
+
+
+package arraylistdemo;
+
+import java.util.ArrayList;
+
+
+public class ArrayListDemo {
+
+    public static void main(String[] args) {
+       
+        // arraylist of string elements
+      ArrayList<String> al = new ArrayList<String>();
+
+      // adding elements to arraylist
+      al.add("orange");
+      al.add("mango");
+      al.add("strawberry");
+      al.add("cherry");
+      al.add("apple");
+
+      // printing arraylist elements
+      System.out.println("--------------ArrayList Class Java Example-------------------");
+      System.out.println("Displaying arraylist elements : " + al);
+
+      // now adding elements at given index
+      al.add(0,"Pear");
+      al.add(1,"Pineapple");
+
+      // now removing elements from the arraylist   
+      al.remove("strawberry");
+      al.remove("cherry");
+
+      System.out.println("After adding and removing elements : " + al);
+
+      // removing element from the given index
+      al.remove(2);
+
+      System.out.println("The final arraylist looks like this : " + al);
+   }
+}
+
+    
+    
+
+
+
+/* Output:
+
+--------------ArrayList Class Java Example-------------------
+Displaying arraylist elements : [orange, mango, strawberry, cherry, apple]
+After adding and removing elements : [Pear, Pineapple, orange, mango, apple]
+The final arraylist looks like this : [Pear, Pineapple, mango, apple]
+
+*/
+
+
