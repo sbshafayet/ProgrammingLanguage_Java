@@ -1,0 +1,261 @@
+
+
+
+// Using For Loop
+
+import java.util.Scanner;
+
+public class FactorialForLoop
+{
+   public static void main(String[] args)
+   {
+      long number, factorial = 1; 
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter an integer to find its factorial : "); 
+      number = sc.nextLong();
+
+      for(int a = 1; a <= number; a++)
+      {
+         factorial = factorial * a;
+      }
+      System.out.println("Factorial of " + number + " is : " + factorial);
+      sc.close();
+   }
+}
+
+
+/*
+Output:
+
+Please enter an integer to find its factorial : 5
+Factorial of 5 is : 120
+*/
+
+
+
+
+// Factorial function java
+
+import java.util.Scanner;
+
+public class FactorialFunction
+{
+   public static void main(String[] args)
+   {
+      long number, factorial = 0; 
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to find its factorial : "); 
+      number = sc.nextLong();
+      factorial = functionFactorial(number); 
+      System.out.println("Factorial of " + number + " is : " + factorial);
+      sc.close();
+   }
+ 
+   static long functionFactorial(long n)
+   {
+      long fact = 1;
+      for(int a = 1; a <= n; a++)
+      { 
+         fact = fact * a;
+      }
+      return fact;
+   }
+}
+
+/* Output:
+
+Please enter a number to find its factorial : 6
+Factorial of 6 is : 720
+*/
+
+
+
+
+
+// Factorial program using recursion in java
+
+// using scanner class
+
+import java.util.Scanner;
+
+public class FactorialRecursion
+{
+   public static void main(String[] args)
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to find its factorial : "); 
+      int number = sc.nextInt();
+      // calling the user defined function
+      int factorial = factorialFunction(number);
+      System.out.println("Factorial of " + number + " is : " + factorial);
+      sc.close();
+   }
+ 
+   static int factorialFunction(int n)
+   {
+      int result;
+      if(n == 1)
+      {
+         return 1;
+      }
+      // here we are calling the recursion function
+      result = factorialFunction(n - 1) * n;
+      return result;
+   }
+}
+
+
+/*
+Output:
+
+Please enter a number to find its factorial : 10
+Factorial of 10 is : 3628800
+*/
+
+
+
+
+
+// without using scanner class
+
+public class RecursionFactorial
+{
+   public static void main(String[] args)
+   {
+      int factorial = factorialFunction(6);
+      System.out.println("Factorial of 6 is : " + factorial);
+   }
+ 
+   static int factorialFunction(int n)
+   {
+      int result;
+      if(n == 1)
+      {
+         return 1;
+      }
+      // here we are calling the recursion function
+      result = factorialFunction(n - 1) * n;
+      return result;
+   }
+}
+
+
+/*
+Output:
+
+Factorial of 6 is : 720
+*/
+
+
+
+
+
+// Factorial while loop java
+
+import java.util.Scanner;
+
+public class FactorialWhile
+{
+   public static void main(String[] args)
+   {
+      int number, factorial = 1; 
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to find its factorial : "); 
+      number = sc.nextInt();
+ 
+      int a = 1;
+      while(a <= number)
+      {
+         factorial = factorial * a;
+         a++;
+      }
+      System.out.println("Factorial of " + number + " is : " + factorial);
+      sc.close();
+   }
+}
+
+
+/*
+Output:
+
+Please enter a number to find its factorial : 6
+Factorial of 6 is : 720
+*/
+
+
+
+
+
+
+
+// Using do while loop
+
+import java.util.Scanner;
+
+public class FactorialDoWhile
+{
+   public static void main(String[] args)
+   {
+      int number, factorial = 1; 
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Please enter a number to find its factorial : "); 
+      number = sc.nextInt();
+ 
+      int a = 1; 
+      do
+      {
+         factorial = factorial * a;
+         a++;
+      }
+      while(a <= number); 
+      System.out.println("Factorial of " + number + " is : " + factorial);
+      sc.close(); 
+   }
+}
+
+
+/*
+Output:
+
+Please enter a number to find its factorial : 7
+Factorial of 7 is : 5040
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
