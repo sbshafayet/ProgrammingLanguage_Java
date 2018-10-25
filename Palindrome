@@ -1,0 +1,126 @@
+
+
+
+import java.util.Scanner;
+
+public class PalindromeNumberInJava
+{
+   public static void main(String[] args)
+   {
+      System.out.print("Please enter a number to reverse : ");
+      Scanner sc = new Scanner(System.in);
+      int number = sc.nextInt();
+      int x = number;
+
+      // Here number entered is reversed
+      int reverse = 0;
+      int y;
+
+      while(number > 0)
+      {
+         y = number % 10;
+         reverse = reverse * 10 + y;
+         number = number / 10;
+      }
+
+      if(reverse == x)
+      {
+         System.out.println(x + " is a Palindrome Number.");
+      }
+      else
+      {
+         System.out.println(x + " is not a Palindrome Number.");
+      }
+   }
+}
+
+
+/*
+Output:
+
+Please enter a number to reverse: 101
+101 is a Palindrome Number.
+*/
+
+
+
+
+
+
+
+// Using for Loop
+
+import java.util.Scanner;
+
+public class PalindromeJava 
+{
+   public static void main(String[] args) 
+   {
+      String original, reverse = ""; 
+      Scanner sc = new Scanner(System.in); 
+      System.out.print("Please enter a string/number to check for palindrome in java : "); 
+      original = sc.nextLine(); 
+      int length = original.length(); 
+      for(int a = length - 1; a >= 0; a--) 
+         reverse = reverse + original.charAt(a); 
+      if(original.equals(reverse))
+      {
+         System.out.println(original + " is a palindrome number/string.");
+      }
+      else
+      {
+         System.out.println(original + " not a palindrome number/string.");
+      }
+      sc.close();
+   }
+}
+
+
+/*
+Output:
+
+Please enter a string/number to check for palindrome in java : mom
+mom is a palindrome number/string.
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
