@@ -1,0 +1,169 @@
+
+
+package inttobinary;
+import java.util.Scanner;
+
+public class IntToBinary {
+
+    public static void main(String[] args){
+        
+      int number = 0;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter an integer : ");
+      number = sc.nextInt(); 
+      convertToBinary(number);
+      sc.close();
+   }
+ 
+   public static void convertToBinary(int num)
+   {
+      String str = "";
+      for(int a = 0; a < 8; a++)
+      {
+         if(num % 2 == 1)
+         {
+            str = "1" + str;
+         }
+         if(num % 2 == 0)
+         {
+            str = "0" + str;
+         }
+         num = num / 2;
+      }
+      System.out.println("The binary conversion is : " + str);
+   }
+}
+    
+    
+
+
+/* Sample Output :
+
+Please enter an integer : 14
+The binary conversion is : 00001110
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Using while Loop
+
+
+
+package IntToBinaryUsingLoop;
+import java.util.Scanner;
+
+public class IntToBinary {
+    
+    public static void main(String[] args)
+   {
+      int num;
+      String str = "";
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter the a number : ");
+      num = sc.nextInt();
+      while(num > 0)
+      {
+         int y = num % 2;
+         str = y + str;
+         num = num / 2;
+      }
+      System.out.println("The binary conversion is : " + str);
+      sc.close();
+   }
+}
+
+
+
+
+
+/* Sample output:
+
+Please enter the a number : 23
+The binary conversion is : 10111
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Using Integer.toBinaryString()
+
+
+
+import java.util.Scanner;
+
+public class IntToBinaryDemo
+{
+   public static void main(String[] args)
+   {
+      int number;
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Please enter the a number : ");
+      number = sc.nextInt(); 
+      System.out.println("The Binary conversion is : " + Integer.toBinaryString(number)); 
+      System.out.println("The number of 1 bits in " + number + " is : "+ Integer.bitCount(number));
+      sc.close();
+   }
+}
+
+
+
+/* Output:
+
+Please enter the a number : 23
+The Binary conversion is : 10111
+The number of 1 bits in 23 is : 4
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
