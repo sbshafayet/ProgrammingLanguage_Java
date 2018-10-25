@@ -1,0 +1,60 @@
+
+
+package binarytodecimal;
+import java.util.Scanner;
+
+public class BinaryToDecimal {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter a Binary Number: ");
+
+        int binaryNumber = sc.nextInt();
+        int binary = binaryNumber;
+
+        int decimal = 0;
+        int toPower = 0;
+
+        while (true) {
+            if (binary == 0) {
+                break;
+            } else {
+                int temp = binary % 10;
+                decimal += temp * Math.pow(2, toPower);
+                binary = binary / 10;
+                toPower++;
+            }
+        }
+
+        System.out.println("Binary Number = " + binary + ", Decimal Number = " + decimal);
+    }
+}
+
+
+
+
+/* Sample Output:
+
+Please enter a Binary Number: 1000
+
+Binary Number = 0, Decimal Number = 8
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
