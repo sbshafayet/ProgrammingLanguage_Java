@@ -3,9 +3,7 @@
 
 
 package arraylistdemo;
-
 import java.util.ArrayList;
-
 
 public class ArrayListDemo {
 
@@ -55,5 +53,17 @@ After adding and removing elements : [Pear, Pineapple, orange, mango, apple]
 The final arraylist looks like this : [Pear, Pineapple, mango, apple]
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
