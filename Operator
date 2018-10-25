@@ -1,0 +1,596 @@
+
+
+> Types of operator:
+
+Here are the types of operators in java,
+
+    > Arithmetic Operator
+    > Unary Operator
+    > Logical Operator
+    > Shift Operator
+    > Relational Operator
+    > Bitwise Operator
+    > Ternary Operator
+    > Assignment Operator
+    
+    
+    
+    
+    
+                      > Java Operator and Precedure:
+    
+    
+    Operaton                                          Precedure
+    |
+    Arithmetic                                    +   -   *   /   %
+    Logical                                       &&   ||
+    Relational                                    < >   <=   >=   ==   !=
+    Assignment                                    =   +=   -=   *=   /=   %=   &=   ^=   |=   <<=   >>=   >>>=
+    Unary                                         a++   a--   ++a   --a   +a   -a   ~   !
+    Shift                                         <<   >>   >>>
+    Bitwise                                       &   ^   |
+    Ternary                                       ?   :
+
+    
+    
+    
+    
+    
+
+
+
+                         < Arithmetic Operator>
+                         
+
+// "+" operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 5;
+      int b = 9;
+      int result;
+ 
+      result = a + b;
+
+      System.out.println(result);
+   }
+}
+
+
+/*
+Output: 14
+/*
+
+
+
+
+// "-" operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 10;
+      int b =  5;
+      int result;
+ 
+      result = a - b;
+
+      System.out.println(result);
+   }
+}
+
+
+/*
+Output: 5
+*/
+
+
+
+
+// "/" operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 10;
+      int b =  5;
+      int result;
+ 
+      result = a / b;
+
+      System.out.println(result);
+   }
+}
+
+
+/*
+Output: 2
+*/
+
+
+
+
+
+// "%" operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 10;
+      int b =  5;
+      int result;
+ 
+      result = a % b;
+
+      System.out.println(result);
+   }
+}
+
+
+/*
+Output: 0
+*/
+
+
+
+
+
+// post-increment operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 5;
+ 
+      a++;
+ 
+      System.out.println(a);
+   }
+}
+
+
+/*
+Output: 6
+*/
+
+
+
+
+
+
+// pre-increment operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 5;
+ 
+      ++a;
+ 
+      System.out.println(a);
+   }
+}
+
+
+/*
+Output: 6
+*/
+
+
+
+
+
+// && -> AND logical operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int course1 = 40;
+      int course2 = 60;
+ 
+      if((course1 >= 35) && (course2 >= 35))
+      {
+         System.out.println("condition is true!");
+      }
+      else
+      {
+         System.out.println("condition is false!");
+      }
+   }
+}
+
+
+/*
+Output: condition is true!
+*/
+
+
+
+
+
+|| -> OR logical operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int course1 = 20;
+      int course2 = 25;
+ 
+      if((course1 >= 35) || (course2 >= 35))
+      {
+         System.out.println("condition is true!");
+      }
+      else
+      {
+         System.out.println("condition is false!");
+      }
+   }
+}
+
+/*
+Output: condition is false!
+*/
+
+
+
+
+
+
+
+
+                            < Shift operator >
+                            
+                            
+
+There are two shift operators,
+
+    << left shift operator
+    >> right shift operator
+
+Let us understand left shift operator with an example, say,
+
+<< Left Shift
+
+m = 00110011
+n = 2
+m << n = 11001100
+
+Here “m” left shift “n” means,
+
+“m” specifies the value to be shifted and “n” specifies number of positions that bits in the value are to be shifted.
+
+So each bit in the “m” will be moved to left side by 2 positions. And the output is m << n = 11001100.
+
+
+
+
+
+
+
+ << - Left shift operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int x = 51;
+      System.out.print("Binary value of x is : " + Integer.toBinaryString(x) + "\n");
+ 
+      int y = 2;
+ 
+      int result = x << y;
+ 
+      System.out.print("Binary value after left shift(<<) operator : " + Integer.toBinaryString(result));
+      System.out.println("Result : " + result);
+   }
+}
+
+
+/* Output:
+Binary value of x is: 110011
+Binary value after left shift(<<) operator: 11001100
+Result: 124
+*/
+
+
+
+
+
+>> Right Shift Operator
+
+m = 11001100
+n = 2
+m >> n = 00110011
+
+Here “m” right shift “n” means,
+
+“m” specifies the value to be shifted and “n” specifies number of positions that bits in the value are to be shifted.
+
+So each bit in the “m” will be moved to right side by 2 positions. And the output is m >> n = 00110011.
+
+
+
+
+
+
+
+
+
+>> - Right shift operator
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int x = 204;
+      System.out.print("Binary value of x is : " + Integer.toBinaryString(x) + "\n");
+ 
+      int y = 2;
+ 
+      int result = x >> y;
+ 
+      System.out.print("Binary value after right shift(>>) operator : " + Integer.toBinaryString(result));
+      System.out.println("Result: " + result);
+   }
+}
+
+
+/*Sample Output:
+Binary value of x is: 11001100
+Binary value after left shift(<<) operator: 110011
+Result: 51
+*/
+
+
+
+
+ 
+                          < Relational operator >
+
+
+There are six relational operators:
+
+    > equal to (=)
+    > less than (<)
+    > greater than (>)
+    > not equal to (≠)
+    > greater than or equal to (≥)
+    > less than or equal to (≤)
+
+
+
+
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int x = 10;
+      int y = 20;
+
+      System.out.print("To check if value of x and y are equal: " + (x == y));
+      System.out.print("To check if the value of x and y are not equal: " + (x != y));
+      System.out.print("To check if the value of x greater than y: " + (x > y));
+      System.out.print("To check if the value of x is lesser than y: " + (x < y));
+      System.out.print("To check if the value of x is greater than or equal to y: " + (x >= y));
+      System.out.print("To check if the value of x is lesser than or equal to y: " + (x <= y));
+   }
+}
+
+
+
+
+
+
+
+
+                          < Bitwise operator >
+                          
+ > Mainly there are four types of bitwise operator in java:
+
+    AND (&)
+    OR (|)
+    XOR (^)
+    NOT (~)
+
+
+
+
+
+// Add two number with Bitwise operation
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int x = 1;
+      int y = 5;
+
+      System.out.println("Bitwise AND : " + (x & y));
+      System.out.println("Bitwise OR : " + (x | y));
+      System.out.println("Bitwise XOR : " + (x ^ y));
+      System.out.println("Bitwise NOT : " + (~x));
+   }
+}
+
+
+/* Output:
+Bitwise AND: 1
+Bitwise OR: 5
+Bitwise XOR: 4
+Bitwise NOT: -2
+
+*/
+
+
+
+
+
+                      < Ternary operator >
+                      
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 10;
+      int b = 20;
+      int result;
+      boolean flag = true;
+ 
+      result = flag ? a : b;
+      System.out.print("If flag is true : " + result);
+ 
+      flag = false;
+ 
+      result = flag ? a : b;
+ 
+      System.out.println("If flag is false: " + result);
+   }
+}
+
+
+/* Output:
+It flag is true: 10
+It flag is false: 20
+*/
+
+
+
+
+
+
+
+                      < Assignment operator >
+                     
+                    
+Here is the list of assignment operators:
+
+    > equal to (=)
+    > add and assign (+=)
+    > subtract and assign (-=)
+    > multiply and assign (*=)
+    > divide and assign (/=)
+    > modulus and assign (%=)
+    > left shift and assign (<<=)
+    > right shift and assign (>>=)
+    > bitwise AND assignment(&=)
+    > bitwise exclusive OR and assign (^=)
+    > bitwise inclusive OR and assign (|=)
+
+
+
+
+
+
+
+public class SampleExample
+{
+   public static void main(String[] args)
+   {
+      int a = 10;
+      int b = 20;
+      int assign = 30;
+      
+      int c = 40;
+      c += a;
+ 
+      int d = 50;
+      d -= b;
+ 
+      int e = 100;
+      e *= a;
+ 
+      int f = 3000;
+      f /= assign;
+ 
+      int g = 300;
+      g %= b;
+ 
+      int h = 21;
+      h <<= 3;
+ 
+      int i = 17;
+      i >>= 2;
+ 
+      int j = 13;
+      j &= 13;
+ 
+      int k = 21;
+      k ^= 14;
+ 
+      int l = 29;
+      l |= 12;
+ 
+      System.out.print("Equal : " + assign);
+      System.out.print("Add and assign : " + c);
+      System.out.print("Subtract and assign : " + d);
+      System.out.print("Multiply and assign : " + e);
+      System.out.print("Divide and assign : " + f);
+      System.out.print("Modulus and assign : " + g);
+      System.out.print("Left shift and assign : " + h);
+      System.out.print("Right shift and assign : " + i);
+      System.out.print("Bitwise AND and assign : " + j);
+      System.out.print("Bitwise exclusive OR and assign : " + k);
+      System.out.println("Bitwise inclusive OR and assign : " + l); 
+   }
+}
+
+
+/* Output:
+
+Equeal: 30
+Add and assign: 30
+Multiply and assign: 1000
+Divide and assign: 100
+Modulus and assign: 0
+Left shift and assign: 65
+Right shift and assign: 4
+Bitwise AND assign: 13
+Bitwise exclusive OR and assign: 27
+Bitwise inclusive OR and assign: 29
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
