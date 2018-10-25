@@ -1,8 +1,6 @@
 
 
-
-
-package Interface_2;
+package InterfaceDemo;
 
 public interface Vehicle {
 
@@ -11,7 +9,7 @@ public interface Vehicle {
     public void steer();
 }
 
-package Interface_2;
+package InterfaceDemo;
 public class BMW implements Vehicle {
 
     @Override
@@ -29,7 +27,8 @@ public class BMW implements Vehicle {
         // TODO Auto-generated method stub
     }
     }
-    
+
+package InterfaceDemo;
 public class InterfaceTest {
 public static void main(String[] args) {
         Vehicle ve = new BMW();
