@@ -1,0 +1,99 @@
+
+
+package decimaltobinary;
+import java.util.Scanner;
+
+public class DecimalToBinary {
+
+    public String toBinary(int a) {
+        if (a == 0) {
+            return "0";
+        }
+        String strBinary = "";
+        while (a > 0) {
+            int b = a % 2;
+            strBinary = b + strBinary;
+            a = a / 2;
+        }
+        return strBinary;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter number to convert: ");
+        int decimal = sc.nextInt();
+
+        DecimalToBinary dtb = new DecimalToBinary();
+        String str = dtb.toBinary(decimal);
+        System.out.println("Converted binary value is " + str);
+    }
+
+}
+
+
+
+
+
+
+
+
+/ * Sample output:
+
+please enter number to convert : 20
+Converted binary value is: 10100
+
+*/
+
+
+
+
+
+
+
+
+
+//Using toBinaryString method
+
+
+
+package DecimalToBinaryDemo;
+
+public class DecimalToBinary {
+    
+    public static void main(String[] args)
+   {
+      System.out.println("Decimal to binary java of 104: ");
+      System.out.println(Integer.toBinaryString(104));
+      System.out.println("\nDecimal to binary java of 554: ");
+      System.out.println(Integer.toBinaryString(554));
+      System.out.println("\nDecimal to binary java of 644: ");
+      System.out.println(Integer.toBinaryString(644));
+   }
+}
+
+
+
+
+
+
+
+/* Sample Output:
+
+Decimal to binary java of 104: 1101000
+
+Decimal to binary java of 554: 1000101010
+
+Decimal to binary java of 644: 1010000100
+
+*/
+
+
+
+
+
+
+
+
+
+
+
