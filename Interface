@@ -1,6 +1,6 @@
 
 
-package InterfaceDemo;
+package interfacedemo;
 
 public interface Vehicle {
 
@@ -9,7 +9,7 @@ public interface Vehicle {
     public void steer();
 }
 
-package InterfaceDemo;
+package interfacedemo;
 public class BMW implements Vehicle {
 
     @Override
@@ -56,21 +56,34 @@ BMW car is accelerating!!
 
 
 
+
 /* 
-N.B:
-> Interfecae: An interface is an collection of abrstract methods.
+Interface: An interface is a collection of abstract methods.
 
-Why we need an interface?
-> For fully abstraction.
-> Its supports multiple interface.
-
-Declaring an interface:
-> interface keyword is used to interface
+Why do we need interface?
+1. For fully abstraction
+2. It supports multiple inheritance.
 
 Interfaces have the following properties:
-> Each method in an interface is also implicity abstract.
-so the abstract keyword is not needed.
-> Methods in an interface are implicity public.
-> A class can inherit from just one super class but can implement multiple interfaces.  
+> Each method in an interface it also implicitly abstract , so the abstract keyword is not needed.
+> Methods in an interface are implicitly public.
+> A class can inherit from just one superclass, but can implement multiple interfaces!
 
-*/
+Point to be notice:
+> The java compiler adds public and abstract keywords before the interface method.
+> The java compiler adds public, static and final keywords before the interface variable.
+   So we can say that all variables are constant, no instance variables.
+   
+ */
+
+
+
+
+
+
+
+
+
+
+
+
