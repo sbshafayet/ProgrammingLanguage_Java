@@ -1,0 +1,44 @@
+
+
+package interfacedemo;
+public interface MyInterface {
+
+    public void show();
+}
+
+package interfacedemo;
+public interface MyInterface2 extends MyInterface {
+
+    public void display();
+}
+
+package interfacedemo;
+public class Demo implements MyInterface2 {
+
+    @Override
+    public void show() {
+        System.out.println("Interface 1");
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Interface 2");
+    }
+
+    public static void main(String[] args) {
+        MyInterface2 obj = new Demo();
+        obj.display();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
