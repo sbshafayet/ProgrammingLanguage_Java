@@ -1,0 +1,102 @@
+
+
+>> Problem:
+
+Write a Java Program which will fulfill the value points:
+
+i. Shape class:
+    > Width and height (private variable)
+    > Necessary methods to set or get values of these two variables.
+  
+ii. Triangle class:
+    > Inherits shape class
+    > Method area () to calculate and display area of triangle
+      [ area of triangle = (height * width)/2 ]
+      
+iii. Rectangle class:
+    > Inherits shape class:
+    > Method area () to calculate and display area of recangle
+      [ area of rectangle = (height * width ]
+      
+      
+ iv. Main class:
+     > Create an object of each of the rectangle and triangle classes.
+     > Initialize the parent class variables by calling method.
+     > Call area method of both rectangle and triangle.
+     
+     
+     
+     
+     
+     
+     
+>> Solution:
+
+
+
+package oop;
+public class Shape {
+   int height;
+   int width;
+ 
+   public void setValues(int a,int b)
+   {
+      height = a;
+      width = b;
+   }
+}
+
+package oop;
+public class Triangle extends Shape {
+    
+    public double area () {
+      return (height * width) / 2;
+   }
+}
+    
+package oop;
+public class Rectangle extends Shape {
+    
+     public double area () {
+      return (height * width);
+   }
+}
+
+package oop;
+public class Test {
+    public static void main(String[] args) {
+        Rectangle re = new Rectangle();
+        Triangle tri = new Triangle();
+        
+        re.setValues(10,40);
+        tri.setValues(20,30);
+        System.out.println("Area of rectangle: " + re.area());
+        System.out.println("Area of triangle: " + tri.area());
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
