@@ -1,0 +1,91 @@
+
+
+>> Problem:
+
+Class Shape:
+ > Abstract method getArea (double value)
+ > Abstract method getPerimeter (double value)
+ 
+Class Circle ( inherits Shape class):
+ > Static final variable PI (PI= 3.1416)
+ > Area = PI * radius * radius
+ > Perimeter = 4*side
+ 
+Main class:
+ > Create objects of Circle and Shape
+ > Display area and Perimeter of circle and shape
+ 
+ 
+ 
+ 
+ >> Solution:
+ 
+ 
+package abstract_demo;
+public abstract class Shape {
+    
+     abstract double getArea (double a);
+     abstract double getPeri (double a);
+    
+    }
+    
+package abstract_demo;
+public class Circle extends Shape {
+    
+    static final double PI = 3.1416;
+
+    @Override
+    double getArea(double radius) {
+        return (PI*radius*radius);
+    }
+
+    @Override
+    double getPeri(double radius) {
+        return 2*PI*radius;
+    }
+    
+}
+
+package abstract_demo;
+public class Square extends Shape {
+
+    @Override
+    double getArea(double side) {
+        return (side*side);
+        
+         }
+
+    @Override
+    double getPeri(double side) {
+        return (4*side);
+         }
+    
+}
+
+package abstract_demo;
+public class AbstractTest {
+    
+    public static void main(String[] args) {
+        
+        Shape s = new Circle();
+        System.out.println("Area of circle: "+s.getArea(3));
+        System.out.println("Perimeter of circle: "+s.getPeri(3));
+        s = new Square ();
+        System.out.println("Area of Square: "+s.getArea(3));
+        System.out.println("Perimeter of Square: "+s.getPeri(3));
+    }
+    
+}
+
+    
+    
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
