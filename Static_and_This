@@ -1,7 +1,6 @@
 
 
 package staticandthis;
-
 public class Student {
 
     String name;
@@ -52,8 +51,8 @@ public class Test {
 N.B:
 
 >> Static Keyword: "static" keyword is used for memory management.It makes the program more efficient by saving memory.
-        Static members belong to the class instead of a specific instance. Static keyword can be used with class,
-        variable, method and block.
+   Static members belong to the class instead of a specific instance. Static keyword can be used with class,
+   variable, method and block.
         
 > Static Keyword:
 1. Static variable
