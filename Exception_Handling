@@ -1,0 +1,46 @@
+
+
+package exception_handling;
+public class ExceptionDemo {
+public static void main(String [ ] args) {
+
+         try {
+            
+            int x = 10 ;
+            int y = 0 ;
+            int result = x / y  ;
+            System.out.println("Result :" + result) ;
+            
+         }
+         catch (ArithmeticException e) {
+            System.out.println("Exception: " + e) ;
+         }
+        	  System.out.println("After exception is handled") ;
+         }
+      }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+>> Try-Catch Keyword:  "Try" and "catch" are keywords that represent the handling of exceptions due to data or
+   coding errors during program execution. A try block is the block of code in which exceptions occur.
+   A catch block catches and handles try block exceptions.
+   Java try block is used to enclose the code that might throw an exception.
+   Java catch block is used to handle the Exception.
+
+>> Throw Keyword:  The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
+   The throw keyword is mainly used to throw custom exceptions.
+
+
+
+
+*/
