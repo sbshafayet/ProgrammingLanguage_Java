@@ -36,8 +36,8 @@ iii. Rectangle class:
 
 package oop;
 public class Shape {
-   int height;
-   int width;
+   protected int height;
+   protected int width;
  
    public void setValues(int a,int b)
    {
