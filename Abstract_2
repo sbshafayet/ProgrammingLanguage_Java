@@ -3,17 +3,21 @@
 >> Problem:
 
 Class Shape:
- > Abstract method getArea (double value)
- > Abstract method getPerimeter (double value)
+ ● Abstract method getArea (double value)
+ ● Abstract method getPerimeter (double value)
  
 Class Circle ( inherits Shape class):
- > Static final variable PI (PI= 3.1416)
- > Area = PI * radius * radius
- > Perimeter = 4*side
+ ● Static final variable PI (PI= 3.1416)
+ ● Area = PI * radius * radius
+ ● Perimeter = 2 * PI *radius
+
+Class Square ( inherits Shape class ):
+● Area = side * side
+● Perimeter: 4 * side
  
 Main class:
- > Create objects of Circle and Shape
- > Display area and Perimeter of circle and shape
+  ● Create objects of Circle and Shape
+  ●  Display area and perimeter of circle and shape
  
  
  
