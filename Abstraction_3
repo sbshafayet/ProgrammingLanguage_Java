@@ -1,0 +1,121 @@
+
+>>Problem:
+
+1. Class Student: a. Private variable: id, marks 
+b. Protected variable: batch_number  
+c. Constructor or Method to access/assign values to variables if needed. 
+d. Abstract method display(). This method prints out all the information of a student. 
+e. Abstract method calculate_grade() 
+ 
+2. Class Undergraduate: (Not an Abstract class) 
+a. Inherits Student class.
+b. Rules to calculate grade: Greater than or equal 40 (Pass), Less than 40 (Fail)
+ 
+3. Class Graduate: (Not an Abstract class) 
+a. Inherits Student class. 
+b. Rules to calculate grade: Greater than or equal 60 (Pass), Less than 60 (Fail)
+ 
+ 
+4. From the main function, create graduate and undergraduate students and display 
+  id, batch number and grade of the students by calling display method. 
+
+
+
+
+
+
+
+
+
+>>Solution:
+
+
+package abstraction_oop ;
+public abstract class Student {
+    private int id ;
+    private double marks ;
+    protected int batch_number  ;
+
+    public void setId (int id) {
+        this.id = id ;
+    }
+   public int getId ( ) {
+        return id ;
+    }
+    public void setMarks (double marks) {
+        this.marks = marks ;
+    }
+   public double getMarks ( ) {
+        return marks ;
+    }
+
+  abstract void display ( ) ;
+  abstract void calculate_garde ( ) ;
+}
+
+package abstraction_oop ;
+public class Undergraduate extends Student {
+   
+    public void calculate_garde ( ) {
+        if  (getMarks ( ) >= 40) {
+            System.out.println ("pass") ;
+        }
+        else {
+            System.out.println ("fail") ;
+        }
+    }
+   void display ( ) {
+         System.out.println ("ID:  "+getId ( ) ) ;
+        System.out.println ("Batch Number :  "+batch_number) ;
+    
+    }
+}
+
+package abstraction_oop ;
+public class Graduate extends Student {
+
+    public void calculate_garde ( ) {
+        if (getMarks ( ) >= 60) {
+            System.out.println ("pass") ;
+        }
+        else {
+            System.out.println ("fail") ;
+        }
+    }
+    void display ( ) {
+        System.out.println ("ID:  "+getId ( ) ) ;
+        System.out.println ("Batch Number:  "+batch_number) ;
+    }
+}
+    
+package abstraction_oop ;
+public class AbstractionTest {
+
+    public static void main (String [ ] args) {
+        Student ref ;
+        ref = new Undergraduate ( ) ;
+        ref.setId(101) ;
+        ref.setMarks(70.50) ;
+        ref.batch_number = 45 ;
+        
+        ref.calculate_garde ( ) ;
+        ref.display ( ) ;
+        
+        ref = new Graduate ( ) ;
+        ref.setId(202) ;
+        ref.setMarks(50.56) ;
+        ref.batch_number = 44 ;
+        
+        ref.display ( ) ;
+        ref.calculate_garde ( ) ;
+    }
+}
+
+
+
+
+
+
+
+
+
