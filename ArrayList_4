@@ -1,0 +1,52 @@
+
+
+package array_list_oop;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Array_List_OOP {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> number = new ArrayList<Integer>();
+
+        int size;
+        int arr[];
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array : ");
+
+        size = sc.nextInt();
+        arr = new int[size];
+      
+        System.out.print("Please enter numbers : ");
+
+        for (int i = 0; i < size; i++) {
+            int data = sc.nextInt();
+            number.add(data);
+
+        }
+        System.out.println("ArrayList contains: " + number);
+        System.out.println("Size contains: " + number.size());
+
+        for (int i = 0; i < number.size(); i++) {
+            if (number.get(i) % 2 == 1) {  // number is odd  
+                number.remove(i);
+            }
+
+        }
+        System.out.println("After removing ArrayList contains: " + number);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
