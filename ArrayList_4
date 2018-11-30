@@ -1,7 +1,6 @@
 
 
 package array_list_oop;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
